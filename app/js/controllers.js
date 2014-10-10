@@ -1,7 +1,7 @@
 'use strict';
 
 /* Controllers */
-angular.module('angular-tweets')
+angular.module('angular-instagram')
 
 
 
@@ -9,7 +9,6 @@ angular.module('angular-tweets')
     function($scope, instagramService) {
 
       instagramService.getPhotos().then(function(photos) {
-        console.log(photos);
         $scope.photoList = photos;
       });
 
@@ -21,7 +20,6 @@ angular.module('angular-tweets')
     function($scope, $routeParams,instagramService) {
 
       instagramService.getPhoto($routeParams.id).then(function(photo) {
-        console.log(photo);
         $scope.photo = photo;
       });
 

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angular-tweets', [
+angular.module('angular-instagram', [
     // angular modules
     'ngRoute', 'ngResource', 'ngAnimate',
 

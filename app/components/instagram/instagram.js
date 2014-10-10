@@ -20,6 +20,11 @@ angular.module('instagram', [])
     });
   }])
 
+  // Service for receive raw instagram data
+  .service('instagramTest', [function() {
+    return {test: 1}
+  }])
+
 
   // Service for receive ready to use photos/photo
   .service('instagramService', ['$q', 'instagramResource', function($q, instagramResource) {
