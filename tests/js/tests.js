@@ -7,7 +7,7 @@ var instagramService = {
     deferred = q.defer();
     return deferred.promise;
   },
-  getPhoto: function(id) {
+  getPhoto: function() {
     deferred = q.defer();
     return deferred.promise;
   },
@@ -35,7 +35,7 @@ describe('PhotoList Controller', function(){
   }));
 
   it('should call instagramService.getPhotos on creating',
-    inject(function($rootScope, $controller, $q) {
+    inject(function($rootScope, $controller) {
 
       controller = $controller('PhotoListCtrl', {
         $scope: scope,
@@ -49,7 +49,7 @@ describe('PhotoList Controller', function(){
     }));
 
   it('should receive photoList array with length equal 2',
-    inject(function($rootScope, $controller, $q) {
+    inject(function($rootScope, $controller) {
 
       controller = $controller('PhotoListCtrl', {
         $scope: scope,
