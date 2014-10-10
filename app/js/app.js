@@ -7,6 +7,8 @@ angular.module('angular-tweets', [
     // components
     'instagram'])
 
+
+
   // config routes
   .config(['$routeProvider', '$locationProvider',
     function ($routeProvider, $locationProvider) {
