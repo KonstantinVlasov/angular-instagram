@@ -1,0 +1,5 @@
+<h2>{{photo.caption.text}}</h2>
+<a href="{{photo.link}}" target="_blank">
+  <img ng-src="{{photo.images.low_resolution.url}}" />
+</a>
+<p ng-click="instagram.like(photo)">Likes: <button>{{photo.likes.count}}</button></p>

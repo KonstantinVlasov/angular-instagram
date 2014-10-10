@@ -1,0 +1,10 @@
+<ul class="instagram-photo-list">
+
+  <li class="instagram-photo-list__photo"
+      ng-repeat="photo in photoList">
+    <a href="/app/#!/photo/{{photo.id}}">
+      <img ng-src="{{photo.images.thumbnail.url}}" />
+    </a>
+  </li>
+
+</ul>

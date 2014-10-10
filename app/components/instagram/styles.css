@@ -1,0 +1,8 @@
+.instagram-photo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+  .instagram-photo-list__photo {
+    float: left;
+  }
